@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Πιτες του πιτου</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Οι Πιτες του Πιτου</h2>
+      <p>Ελα και παρε την πιτα σου</p>
+      <nav>
+        <ul>
+          <li><a href="store.html">Καταστημα</a></li>
+          <li><a href="contact.html">Επικοινωνια</a></li>
+          <li><a href="pies.html">Οι Πιτες μας</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>Επικοινωνια</h1>
+        <form action="/sendData" method="post">
+          <fieldset>
+             <label for="txtName">Ονοματεπωνυμο: </label>
+            <input id="txtName" type="text" name="name"
+            autocomplete="on" minlength="3" maxlength="40" required>(*)
+            <br>
+            <label for="txtEmail">E-mail: </label>
+            <input id="txtEmail" type="email" name="email"
+            maxlength="40" required autocomplete="on"/>(*)
+            <br>
+            <label for="telnum">Τηλεφωνο: </label>
+            <input id="telnum" type="tel" name="tel" >
+            <br>
+            <label for="txtMessage">Μυνημα: </label>
+            <textarea id="txtMessage" name="message" rows="6"
+            cols="40" required></textarea>(*)
+            <br>
+            (*)Τα πεδια ειναι υποχρεωτικα
+            <br>
+            <input type="submit" value="Αποστολη">
+            <input type="reset" value="Καθαρισμος">
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <a href="index.html#initial">Πηγαινε στην Αρχικη</a>
+
+    <aside>
+      <h2>Προσφορες</h2>
+      <p>Giveaway 1</p>
+      <p>Στις 10 η μια δωρο</p>
+    </aside>
+
+    <footer>
+      <p>Oι Πιτες του Πιτου 2021</p>
+    </footer>
+  </body>
+
+</html>

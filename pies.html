@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Πιτες του πιτου</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Οι Πιτες του Πιτου</h2>
+      <p>Ελα και παρε την πιτα σου</p>
+      <nav>
+        <ul>
+          <li><a href="store.html">Καταστημα</a></li>
+          <li><a href="contact.html">Επικοινωνια</a></li>
+          <li><a href="pies.html">Οι Πιτες μας</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Οι Πιτες μας!</h1>
+      <article>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="images/spanakopita.jpg" alt="Σπανακοπιτα"></td>
+              <td>Σπανακοπιτα</td>
+              <td>4&euro;</td>
+            </tr>
+            <tr>
+              <td><img src="images/manitaropita.jpg" alt="Μανιταροπιτα"/></td>
+              <td>Μανιταροπιτα</td>
+              <td>5.5&euro;</td>
+            </tr>
+            <tr>
+              <td><img src="images/prasopita.jpg" alt="Πρασοπιτα"/></td>
+              <td>Πρασοπιτα</td>
+              <td>3.5&euro;</td>
+            </tr>
+            <tr>
+              <td><img src="images/boureki.jpg" alt="Μπουρεκι"/></td>
+              <td>Μπουρεκι</td>
+              <td>4.5&euro;</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <form action="/sendData" method="post">
+        <article>
+          <h2>Οι Πιτες μας στο χωρο σας!</h2>
+          <fieldset>
+            <legend>Πληροφοριες παραδοσης:</legend>
+            <label for="txtName">Ονοματεπωνυμο: </label>
+            <input id="txtName" type="text" name="name" required
+             minlength="5" maxlength="40" autocomplete="on">(*)
+             <br>
+             <label for="txtAddress">Διευθυνση(Οδος-Αριθμος): </label>
+             <input id="txtAddress" type="text" name="address" autocomplete="on"
+             minlength="5" maxlength="30" required >(*)
+             <br>
+             <label for="txtN">Περιοχη: </label>
+             <select id="txtN" name="neighborhood">
+               <optgroup label="Αθηνα">
+                 <option value="Abelokhpoi">Αμπελοκηποι</option>
+                 <option value="zwgrafoy">Ζωγραφου</option>
+                 <option value="galatsi">Γαλατσι</option>
+                 <option value="polygwno">Πολυγωνο</option>
+                 <option value="gyzi">Γκυζι</option>
+                 <option value="kipseli">Κυψελη</option>
+               </optgroup>
+               <optgroup label="Πειραια">
+                 <option value="pasalimani">Πασαλιμανι</option>
+                 <option value="drapetsona">Δραπετσωνα</option>
+               </optgroup>
+             </select>
+             <br>
+             <label for="txtEmail">E-mail: </label>
+             <input id="txtEmail" type="email" name="email" minlength="6"
+             maxlength="40" autocomplete="on">
+             <br>
+             <label for="txtTel">Τηλεφωνο: </label>
+             <input id="txtTel" type="tel" name="tel" autocomplete="on" required>(*)
+             <br>
+             Ειδικες πληροφοριες για την παραδοση:
+             <br>
+             <textarea id="txtInf" name="informations" rows="5" cols="40"></textarea>
+             <br>
+             (*)Τα πεδια ειναι υποχρεωτικα
+          </fieldset>
+        </article>
+
+        <article>
+          <fieldset>
+            <legend>Παραγγελια:</legend>
+            <ul>
+              <li>
+                <label for="S">Σπανακοπιτες</label>
+                <input id="S" type="number" name="Spanakopites" value="0"
+                 min="0" max="10" step="1">
+              </li>
+              <li>
+                <label for="Ma">Μανιταροπιτες</label>
+                <input id="Ma" type="number" name="Manitaropites" value="0"
+                 min="0" max="10" step="1">
+              </li>
+              <li>
+                <label for="P">Πρασοπιτες</label>
+                <input id="P" type="number" name="Prasopites" value="0"
+                 min="0" max="10" step="1">
+              </li>
+              <li>
+                <label for="Mp">Μπουρεκια</label>
+                <input id="Mp" type="number" name="Mpourekia" value="0"
+                 min="0" max="10" step="1">
+              </li>
+            </ul>
+            <input id="txtProsfora" type="checkbox" name="prosfora">
+            <label for="txtProsfora">Ενσωματωση προσφορας στις 10 η μια πιτα δωρο</label>
+          </fieldset>
+        </article>
+
+        <article>
+          <fieldset>
+            <legend>Τροποι πληρωμης: </legend>
+            <input id="pVisa" type="radio" name="payment" value="visa" checked>
+            <label for="pVisa">VISA</label>
+            <input id="pCush" type="radio" name="payment" value="cush">
+            <label for="pCush">Μετρητα</label>
+            <input id="pEidos" type="radio" name="payment" value="eidos">
+            <label for="pEidos">Ειδος</label>
+          </fieldset>
+        </article>
+        <input type="submit" value="Αποστολη">
+        <input type="reset" value="Καθαρισμος">
+      </form>
+    </main>
+    <br>
+    <a href="index.html#initial">Πηγαινε στην Αρχικη</a>
+    <br>
+    <aside>
+      <h2>Προσφορες</h2>
+      <p>Giveaway 1</p>
+      <p>Στις 10 η μια δωρο</p>
+    </aside>
+
+    <footer>
+      <p>Oι Πιτες του Πιτου 2021</p>
+    </footer>
+  </body>
+</html>
